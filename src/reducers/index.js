@@ -1,4 +1,8 @@
-import { combineReducers } from 'redux';
+import { combineReducers } from 'redux'; //helper function that turns an object whose values are different reducing functions into a single reducing function you can pass to createStore
+
+// REDUCERS (also called reducing functions), are a fundamental concept in functional programming  
+// In Redux, they accept the state object and an action, and return a new state object
+// NOTE reducers DO NOT UPDATE the state object, but instead create a NEW object
 
 const songsReducer = () => {
     return [
